@@ -18,7 +18,6 @@ namespace LitMotion.LitMotion.Runtime.Internal
         {
             foreach (var action in _scheduledActions)
                 action();
-            _scheduledActions.Clear();
             MotionDispatcher.Clear();
         }
 #endif
